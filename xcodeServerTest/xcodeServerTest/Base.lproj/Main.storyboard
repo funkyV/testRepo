@@ -26,28 +26,42 @@
                                     <action selector="didPressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUf-Ka-40S"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daca vezi asta, a mers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vD4-MQ-Zi8">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vD4-MQ-Zi8" firstAttribute="centerX" secondItem="DyK-7K-SCq" secondAttribute="centerX" id="0Rg-yM-hK8"/>
                             <constraint firstItem="DyK-7K-SCq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1eb-Tt-pqZ"/>
                             <constraint firstItem="DyK-7K-SCq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ozJ-S7-z1h"/>
+                            <constraint firstItem="DyK-7K-SCq" firstAttribute="top" secondItem="vD4-MQ-Zi8" secondAttribute="bottom" constant="30" id="wIQ-Ke-NOX"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="DyK-7K-SCq"/>
+                                <exclude reference="vD4-MQ-Zi8"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="0Rg-yM-hK8"/>
                                 <exclude reference="1eb-Tt-pqZ"/>
                                 <exclude reference="ozJ-S7-z1h"/>
+                                <exclude reference="wIQ-Ke-NOX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="DyK-7K-SCq"/>
+                                <include reference="vD4-MQ-Zi8"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="0Rg-yM-hK8"/>
                                 <include reference="1eb-Tt-pqZ"/>
                                 <include reference="ozJ-S7-z1h"/>
+                                <include reference="wIQ-Ke-NOX"/>
                             </mask>
                         </variation>
                     </view>
